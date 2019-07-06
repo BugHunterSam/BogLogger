@@ -5,6 +5,10 @@ https://github.com/BugHunterSam/BogLogger
 (fork)
 git clone git@github.com:BugHunterSam/BogLogger.git
 
+git add ./
+git commit -m "message"
+git push
+
 Vim Adventures
 https://vim-adventures.com/
 
