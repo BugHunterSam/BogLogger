@@ -1,4 +1,6 @@
 Overview of project
+Presentation link https://drive.google.com/drive/folders/1DPSBjcaqbM5GOwh9ovCygCV6tUJP1oQn?usp=sharing
+
 Setting up a Kanban board (Trello)
 Setting up GitHub (ssh token) (Git Bash)
 https://github.com/BugHunterSam/BogLogger
