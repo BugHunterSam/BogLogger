@@ -5,13 +5,11 @@ https://github.com/BugHunterSam/BogLogger
 (fork)
 git clone git@github.com:BugHunterSam/BogLogger.git
 
+//Git Commands we've used today
 git add ./
 git commit -m "message"
 git push
-
-Vim Adventures
-https://vim-adventures.com/
-
+TODO: switch off git push the master
 
 Setting up a MySQL Google cloud instance
 Create manual SQL scripts (CI)
@@ -21,3 +19,9 @@ TODO: update my twitch image (canva)
 every second Sunday
 
 MVP = minimum viable product Version1
+
+//Useful Links
+https://github.com/PaulWaltersDev/FreeLearningResourcesForSoftwareTesters
+Vim Adventures
+https://vim-adventures.com/
+//TODO make this README markup
