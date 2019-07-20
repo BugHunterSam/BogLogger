@@ -37,3 +37,6 @@ CREATE TABLE active_users(dayOfCount DATE NOT NULL, noOfActiveUsersInLastMonth I
 //Count's unique UUID and stores in a seperate table
 
 //Delete 
+
+//TODO
+Add more scripts
