@@ -25,6 +25,8 @@ delete logs
 
 //TODO: setup up node dev environment (ubuntu)
 
+//Google cloud functions quickstart
+https://cloud.google.com/functions/docs/quickstart-nodejs
 
 /**
  * Responds to any HTTP request.
