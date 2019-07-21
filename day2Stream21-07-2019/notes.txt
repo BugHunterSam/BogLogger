@@ -9,6 +9,11 @@
 gcloud sql connect boglogger2 --user=root --quiet
 
 summary_bogs_logged
+CREATE TABLE summary_bogs_logged(date DATE NOT NULL, noOfUsers INT, noOfPoops INT);
+
+UPDATE bogs_logged SET to_be_deleted = TRUE WHERE time = '2019-07-21 00:11:40' AND device_uuid = 'e413255e-8c59-42f1-a43c-a86120cf8c3c' AND TYPE = 4;
+
+
 //date of deletion
 //noOfDistinctUUID's in the last month
 //total number of poops that haven't been marked for deletion
@@ -18,5 +23,16 @@ summarise usage
 mark to be deleted poops older than 30 days
 delete logs
 
+//TODO: setup up node dev environment (ubuntu)
 
-CREATE TABLE bogs_logged(time DATETIMEOFFSET(7) NOT NULL, device_uuid VARCHAR(36) NOT NULL, type INT(1), notes VARCHAR(140), amount enum("S","M","L"), floater bool, to_be_deleted bool);
+
+/**
+ * Responds to any HTTP request.
+ *
+ * @param {!express:Request} req HTTP request context.
+ * @param {!express:Response} res HTTP response context.
+ */
+exports.healthCheck = (req, res) => {
+  let message = req.query.message || req.body.message || 'All Healthy Captain';
+  res.status(200).send(message);
+};
