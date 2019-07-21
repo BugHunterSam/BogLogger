@@ -38,3 +38,20 @@ exports.healthCheck = (req, res) => {
   let message = req.query.message || req.body.message || 'All Healthy Captain';
   res.status(200).send(message);
 };
+e5c15033-42b3-487d-b6c8-17a1b592e9bd
+
+INSERT INTO bogs_logged(time, device_uuid, type, amount, floater) VALUES(NOW(), "e5c15033-42b3-487d-b6c8-17a1b592e9bd", 2, 'S', TRUE);
+
+//Test Database user
+CREATE USER 'testuser2'@'%' IDENTIFIED BY 'TestyMcTestFace';
+GRANT INSERT ON bog_logger.bogs_logged TO 'testuser2'@'%';
+//TODO: remove test database user
+
+BogLogger:australia-southeast1-a:boglogger2
+boglogger:australia-southeast1:boglogger2
+ProjectID:Region:InstanceID
+For example:
+
+my-gcp-project:us-central1:helloworld
+
+//TODO: migrate mysql instance to a server instance where cloud functions are supported, test if faster... (also delete old database users) 
