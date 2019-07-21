@@ -1,2 +1,22 @@
+//DONE reduce autmoatic updates for mysql server
 
 
+//TODO delete backups
+
+//Rotate any API's
+
+//Connect to glcoud sql instance
+gcloud sql connect boglogger2 --user=root --quiet
+
+summary_bogs_logged
+//date of deletion
+//noOfDistinctUUID's in the last month
+//total number of poops that haven't been marked for deletion
+
+//scripts
+summarise usage
+mark to be deleted poops older than 30 days
+delete logs
+
+
+CREATE TABLE bogs_logged(time DATETIMEOFFSET(7) NOT NULL, device_uuid VARCHAR(36) NOT NULL, type INT(1), notes VARCHAR(140), amount enum("S","M","L"), floater bool, to_be_deleted bool);
