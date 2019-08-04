@@ -1,0 +1,17 @@
+OLD database structure 
+time, device_uuid, type, notes, amount, floater, to_be_deleted
+
+New data base structure
+time, utc_timezone, device_uuid, device_language, type, to_be_deleted
+
+ALTER TABLE bogs_logged
+DROP COLUMN notes,
+DROP COLUMN amount,
+DROP COLUMN floater
+;
+
+ALTER TABLE bogs_logged
+ADD COLUMN utc_timezone INT(2) AFTER time;
+
+ALTER TABLE bogs_logged
+ADD COLUMN device_language VARCHAR(5) AFTER device_uuid;
