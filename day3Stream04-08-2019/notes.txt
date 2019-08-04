@@ -15,3 +15,11 @@ ADD COLUMN utc_timezone INT(2) AFTER time;
 
 ALTER TABLE bogs_logged
 ADD COLUMN device_language VARCHAR(5) AFTER device_uuid;
+
+UPDATE bogs_logged
+SET to_be_deleted = FALSE
+WHERE to_be_deleted = NULL;
+
+Update bogs_logged
+SET time = "2019-06-21 03:11:25"
+WHERE time = "2019-07-21 03:11:25";
