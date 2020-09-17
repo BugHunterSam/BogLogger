@@ -1,0 +1,42 @@
+I'm looking to build an iOS app to help track your poo. Eventually I want to make it for the watch, but right now, mobile is all I need to get started.
+
+You can read more about the app idea here: https://bughuntersam.com/boglogger/
+
+This app stores the time and rating of people's poop. My first version has no API's, all the data is stored locally. I'm using standard UI elements and SwiftUI.
+
+There's 7 main features I'll need your help with;
+syncing a log selection from a 1 to 7 list
+Displaying that list of data in a calender view
+Deleting an item from that list
+Support for transalations (Only Arabic and Spanish)
+Building Right to Left rendering to support Arabic
+Automatically deleting data after 28 days
+Building out an export function so people can share/backup their data
+
+You won't need to bother with branding or making the UI look nice. I've started working on a sample project here: https://github.com/BugHunterSam/BogLogger/tree/master/BogLoggeriOS
+
+I've got the spanish and arabic strings in this spreadsheet: https://docs.google.com/spreadsheets/d/1Ht16Ud983U90UHCqQ8ASfbchnZpk6nIL03EiF3fTcTo/edit?usp=sharing
+
+Are you able to help me? How much will this cost me?
+
+JSON
+
+[
+    {
+        "type": 1,
+        "time": "07:22",
+        "date": "2020-09-15"
+    },
+    {
+        "type": 4,
+        "time": "13:22",
+        "date": "2020-09-17"
+    }
+]
+
+CSV
+date,time,type
+2020-09-15,07:22,1
+2020-09-17,13:22,4
+
+What do you think?
