@@ -1,0 +1,24 @@
+--create tables and insert some test data
+CREATE TABLE bogs_logged(time DATETIME NOT NULL, device_uuid VARCHAR(36) NOT NULL, type INT(1), notes VARCHAR(140), amount enum("S","M","L"), floater bool, to_be_deleted bool);
+CREATE TABLE summary_bogs_logged(date DATE NOT NULL, noOfUsers INT, noOfPoops INT);
+INSERT INTO bogs_logged(time, device_uuid, type, amount, floater, to_be_deleted) VALUES(NOW(), "e413255e-8c59-42f1-a43c-a86120cf8c3c", 2, 'S', TRUE, FALSE);
+
+--create addBogs user
+CREATE USER 'addBogs'@'%' IDENTIFIED BY '********';
+GRANT SELECT, INSERT ON bog_logger.bogs_logged TO 'addBogs'@'%';
+
+--create summarizeBogs user, this INSERT is trigger every day at 12:45AM AEST
+CREATE USER 'summarizeBogs'@'%' IDENTIFIED BY '********';
+GRANT SELECT, INSERT ON bog_logger.summary_bogs_logged TO 'summarizeBogs'@'%';
+GRANT SELECT ON bog_logger.bogs_logged TO 'summarizeBogs'@'%';
+INSERT INTO summary_bogs_logged (date, noOfUsers, noOfPoops)  VALUES(CURDATE(), (SELECT COUNT(DISTINCT device_uuid) FROM bogs_logged WHERE to_be_deleted != TRUE), (SELECT COUNT(*) FROM bogs_logged WHERE to_be_deleted != TRUE AND TYPE > 0));
+
+--create markToBeDeletedBogs, this UPDATE is triggered every day at 12:50AM AEST
+CREATE USER 'markToBeDeletedBogs'@'%' IDENTIFIED BY '********';
+GRANT SELECT, UPDATE ON bog_logger.bogs_logged TO 'markToBeDeletedBogs'@'%';
+UPDATE bogs_logged SET to_be_deleted = TRUE WHERE (time < NOW() - INTERVAL 4 WEEK);
+
+--create deleteBogs, this DELETE is triggered every day at 12:55AM AEST
+CREATE USER 'deleteBogs'@'%' IDENTIFIED BY '********';
+GRANT SELECT, DELETE ON bog_logger.bogs_logged TO 'deleteBogs'@'%';
+DELETE FROM bogs_logged WHERE to_be_deleted = TRUE;
