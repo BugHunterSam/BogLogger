@@ -1,2 +1,0 @@
-Google cloud serverless function tutoroial
-https://cloud.google.com/functions/docs/tutorials/http

@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22ED76FD230D5C53006B2CDB /* BogLogger WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 22ED76FC230D5C53006B2CDB /* BogLogger WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		22ED7703230D5C53006B2CDB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22ED7701230D5C53006B2CDB /* Interface.storyboard */; };
+		22ED7705230D5C55006B2CDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22ED7704230D5C55006B2CDB /* Assets.xcassets */; };
+		22ED770C230D5C55006B2CDB /* BogLogger WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 22ED770B230D5C55006B2CDB /* BogLogger WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		22ED7711230D5C55006B2CDB /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ED7710230D5C55006B2CDB /* RatingView.swift */; };
+		22ED7713230D5C55006B2CDB /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ED7712230D5C55006B2CDB /* HostingController.swift */; };
+		22ED7715230D5C55006B2CDB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ED7714230D5C55006B2CDB /* ExtensionDelegate.swift */; };
+		22ED7717230D5C55006B2CDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22ED7716230D5C55006B2CDB /* Assets.xcassets */; };
+		22ED771A230D5C55006B2CDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22ED7719230D5C55006B2CDB /* Preview Assets.xcassets */; };
+		22ED776623177C57006B2CDB /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ED77652317788D006B2CDB /* PrivacyView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22ED76FE230D5C53006B2CDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22ED76F2230D5C53006B2CDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22ED76FB230D5C53006B2CDB;
+			remoteInfo = "BogLogger WatchKit App";
+		};
+		22ED770D230D5C55006B2CDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22ED76F2230D5C53006B2CDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22ED770A230D5C55006B2CDB;
+			remoteInfo = "BogLogger WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		22ED7721230D5C55006B2CDB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				22ED770C230D5C55006B2CDB /* BogLogger WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22ED7725230D5C55006B2CDB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				22ED76FD230D5C53006B2CDB /* BogLogger WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		22ED76F8230D5C53006B2CDB /* BogLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BogLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22ED76FC230D5C53006B2CDB /* BogLogger WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BogLogger WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22ED7702230D5C53006B2CDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		22ED7704230D5C55006B2CDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22ED7706230D5C55006B2CDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22ED770B230D5C55006B2CDB /* BogLogger WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BogLogger WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22ED7710230D5C55006B2CDB /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		22ED7712230D5C55006B2CDB /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		22ED7714230D5C55006B2CDB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		22ED7716230D5C55006B2CDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22ED7719230D5C55006B2CDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		22ED771B230D5C55006B2CDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22ED77652317788D006B2CDB /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PrivacyView.swift; path = "BogLogger WatchKit Extension/PrivacyView.swift"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22ED7708230D5C55006B2CDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22ED76F1230D5C53006B2CDB = {
+			isa = PBXGroup;
+			children = (
+				22ED7700230D5C53006B2CDB /* BogLogger WatchKit App */,
+				22ED770F230D5C55006B2CDB /* BogLogger WatchKit Extension */,
+				22ED76F9230D5C53006B2CDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22ED76F9230D5C53006B2CDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22ED76F8230D5C53006B2CDB /* BogLogger.app */,
+				22ED76FC230D5C53006B2CDB /* BogLogger WatchKit App.app */,
+				22ED770B230D5C55006B2CDB /* BogLogger WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22ED7700230D5C53006B2CDB /* BogLogger WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				22ED7701230D5C53006B2CDB /* Interface.storyboard */,
+				22ED7704230D5C55006B2CDB /* Assets.xcassets */,
+				22ED7706230D5C55006B2CDB /* Info.plist */,
+			);
+			path = "BogLogger WatchKit App";
+			sourceTree = "<group>";
+		};
+		22ED770F230D5C55006B2CDB /* BogLogger WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				22ED7710230D5C55006B2CDB /* RatingView.swift */,
+				22ED77652317788D006B2CDB /* PrivacyView.swift */,
+				22ED7712230D5C55006B2CDB /* HostingController.swift */,
+				22ED7714230D5C55006B2CDB /* ExtensionDelegate.swift */,
+				22ED7716230D5C55006B2CDB /* Assets.xcassets */,
+				22ED771B230D5C55006B2CDB /* Info.plist */,
+				22ED7718230D5C55006B2CDB /* Preview Content */,
+			);
+			path = "BogLogger WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		22ED7718230D5C55006B2CDB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				22ED7719230D5C55006B2CDB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22ED76F7230D5C53006B2CDB /* BogLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22ED7726230D5C55006B2CDB /* Build configuration list for PBXNativeTarget "BogLogger" */;
+			buildPhases = (
+				22ED76F6230D5C53006B2CDB /* Resources */,
+				22ED7725230D5C55006B2CDB /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22ED76FF230D5C53006B2CDB /* PBXTargetDependency */,
+			);
+			name = BogLogger;
+			productName = BogLogger;
+			productReference = 22ED76F8230D5C53006B2CDB /* BogLogger.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		22ED76FB230D5C53006B2CDB /* BogLogger WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22ED7722230D5C55006B2CDB /* Build configuration list for PBXNativeTarget "BogLogger WatchKit App" */;
+			buildPhases = (
+				22ED76FA230D5C53006B2CDB /* Resources */,
+				22ED7721230D5C55006B2CDB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22ED770E230D5C55006B2CDB /* PBXTargetDependency */,
+			);
+			name = "BogLogger WatchKit App";
+			productName = "BogLogger WatchKit App";
+			productReference = 22ED76FC230D5C53006B2CDB /* BogLogger WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		22ED770A230D5C55006B2CDB /* BogLogger WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22ED771E230D5C55006B2CDB /* Build configuration list for PBXNativeTarget "BogLogger WatchKit Extension" */;
+			buildPhases = (
+				22ED7707230D5C55006B2CDB /* Sources */,
+				22ED7708230D5C55006B2CDB /* Frameworks */,
+				22ED7709230D5C55006B2CDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BogLogger WatchKit Extension";
+			productName = "BogLogger WatchKit Extension";
+			productReference = 22ED770B230D5C55006B2CDB /* BogLogger WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22ED76F2230D5C53006B2CDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Samantha Connelly";
+				TargetAttributes = {
+					22ED76F7230D5C53006B2CDB = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					22ED76FB230D5C53006B2CDB = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					22ED770A230D5C55006B2CDB = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 22ED76F5230D5C53006B2CDB /* Build configuration list for PBXProject "BogLogger" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22ED76F1230D5C53006B2CDB;
+			productRefGroup = 22ED76F9230D5C53006B2CDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22ED76F7230D5C53006B2CDB /* BogLogger */,
+				22ED76FB230D5C53006B2CDB /* BogLogger WatchKit App */,
+				22ED770A230D5C55006B2CDB /* BogLogger WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22ED76F6230D5C53006B2CDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22ED76FA230D5C53006B2CDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22ED7705230D5C55006B2CDB /* Assets.xcassets in Resources */,
+				22ED7703230D5C53006B2CDB /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22ED7709230D5C55006B2CDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22ED771A230D5C55006B2CDB /* Preview Assets.xcassets in Resources */,
+				22ED7717230D5C55006B2CDB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22ED7707230D5C55006B2CDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22ED7713230D5C55006B2CDB /* HostingController.swift in Sources */,
+				22ED776623177C57006B2CDB /* PrivacyView.swift in Sources */,
+				22ED7711230D5C55006B2CDB /* RatingView.swift in Sources */,
+				22ED7715230D5C55006B2CDB /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22ED76FF230D5C53006B2CDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22ED76FB230D5C53006B2CDB /* BogLogger WatchKit App */;
+			targetProxy = 22ED76FE230D5C53006B2CDB /* PBXContainerItemProxy */;
+		};
+		22ED770E230D5C55006B2CDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22ED770A230D5C55006B2CDB /* BogLogger WatchKit Extension */;
+			targetProxy = 22ED770D230D5C55006B2CDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22ED7701230D5C53006B2CDB /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22ED7702230D5C53006B2CDB /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22ED771C230D5C55006B2CDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22ED771D230D5C55006B2CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22ED771F230D5C55006B2CDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BogLogger WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BogLogger WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BugHunterSam.BogLogger.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		22ED7720230D5C55006B2CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BogLogger WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BogLogger WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BugHunterSam.BogLogger.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		22ED7723230D5C55006B2CDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = BogLogger_WatchKit_Extension;
+				INFOPLIST_FILE = "BogLogger WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = BugHunterSam.BogLogger.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		22ED7724230D5C55006B2CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = BogLogger_WatchKit_Extension;
+				INFOPLIST_FILE = "BogLogger WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = BugHunterSam.BogLogger.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		22ED7727230D5C55006B2CDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BugHunterSam.BogLogger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		22ED7728230D5C55006B2CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BugHunterSam.BogLogger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22ED76F5230D5C53006B2CDB /* Build configuration list for PBXProject "BogLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22ED771C230D5C55006B2CDB /* Debug */,
+				22ED771D230D5C55006B2CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22ED771E230D5C55006B2CDB /* Build configuration list for PBXNativeTarget "BogLogger WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22ED771F230D5C55006B2CDB /* Debug */,
+				22ED7720230D5C55006B2CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22ED7722230D5C55006B2CDB /* Build configuration list for PBXNativeTarget "BogLogger WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22ED7723230D5C55006B2CDB /* Debug */,
+				22ED7724230D5C55006B2CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22ED7726230D5C55006B2CDB /* Build configuration list for PBXNativeTarget "BogLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22ED7727230D5C55006B2CDB /* Debug */,
+				22ED7728230D5C55006B2CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22ED76F2230D5C53006B2CDB /* Project object */;
+}
